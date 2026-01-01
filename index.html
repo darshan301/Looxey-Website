@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Looxey – Inspirational Lighting Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <!-- <div class="brand-name">Looxey</div>
+      <div class="brand-tag">Inspirational Lighting Solutions</div> -->
+      <img src="assets/Looxey Logo.jpeg" alt="Looxey Logo" width=auto height="55px" >
+    </div>
+
+    <nav class="nav">
+      <a href="#products">Products</a>
+      <a href="#checkout">Checkout</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Inspirational lighting for bold spaces</h1>
+          <p>Looxey designs premium commercial lighting — from sleek downlights to architectural surface lights — 
+            helping architects and retailers craft unforgettable spaces.</p>
+          <div class="hero-ctas">
+            <a href="#products" class="btn btn-primary">Explore Products</a>
+            <a href="#contact" class="btn btn-ghost">Request a Quote</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true" >
+          <div class="feature-card">
+            <div class="tag">Featured</div>
+            <h3>Looxey Downlight</h3>
+            <p>12/18/24W • Dimmable • WH/WW/NH</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+<!-- PRODUCTS -->
+<section id="products" class="products">
+  <div class="container">
+    <h2>Featured Products</h2>
+
+    <div class="ggrid">
+
+      <article class="card">
+        <img src="assets\downlighter.PNG" alt="Linear Light" class="product-img">
+        <h3>Halo Downlight</h3>
+        <p class="muted">Sleek recessed downlight, CRI 95</p>
+        <p class="price">₹1,499</p>
+        <button class="btn btn-primary add-to-cart"
+          data-name="Halo Downlight"
+          data-price="1499">Add to Cart</button>
+        <div class="chip">Downlight</div>
+      </article>
+
+      <article class="card">
+        <img src="assets\linear.webp" alt="Linear Light" class="product-img">
+
+        <h3>Linear Lights</h3>
+        <p class="muted">Modern linear lighting for interiors</p>
+        <p class="price">₹3,999</p>
+        <button class="btn btn-primary add-to-cart"
+          data-name="Linear Lights"
+          data-price="3999">Add to Cart</button>
+        <div class="chip">Surface</div>
+      </article>
+
+      <article class="card">
+        <img src="assets\wall.jpeg" alt="Linear Light" class="product-img">
+
+        <h3>Wall Light</h3>
+        <p class="muted">Decorative wall lighting</p>
+        <p class="price">₹2,299</p>
+        <button class="btn btn-primary add-to-cart"
+          data-name="Wall Light"
+          data-price="2299">Add to Cart</button>
+        <div class="chip">Wall</div>
+      </article>
+
+      <article class="card">
+        <img src="assets\WhatsApp Image 2025-05-16 at 11.53.04 PM.jpeg" alt="Linear Light" class="product-img">
+        <h3>Outdoor Light</h3>
+        <p class="muted">IP65 rated exterior lighting</p>
+        <p class="price">₹2,799</p>
+        <button class="btn btn-primary add-to-cart"
+          data-name="Outdoor Light"
+          data-price="2799">Add to Cart</button>
+        <div class="chip">Outdoor</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CHECKOUT -->
+<section id="checkout" class="checkout">
+  <div class="container">
+    <h2>Checkout</h2>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>Amount</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cartItems"></tbody>
+    </table>
+
+    <h3>Total: ₹<span id="totalAmount">0</span></h3>
+
+    <button class="btn btn-primary">Proceed to Checkout</button>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container contact-inner">
+    <div>
+      <h2>Contact Us</h2>
+      <p class="muted">
+        Email: <a href="mailto:darshankbhansali@gmail.com">darshankbhansali@gmail.com</a><br>
+        Phone: +91 8431250937
+      </p>
+    </div>
+
+    <form id="contactForm" class="contact-form">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+
+      <button class="btn btn-primary" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="brand-name">Looxey</div>
+      <div class="muted">Inspirational Lighting Solutions</div>
+      <!-- <div style="position: absolute"></div> -->
+    </div>
+    <div class="muted">Bengaluru, Karnataka</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
